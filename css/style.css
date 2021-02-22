@@ -1,0 +1,151 @@
+/* REGOLE GENERALI */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(128, 128, 128);
+  font-weight: bold;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+
+
+.contenitore {
+  display: flex;
+}
+
+
+/* SEZIONE LEFT-MENU  */
+
+
+
+.left-menu {
+  background-color: black;
+  height: 100vh;
+  width: 300px;
+  padding: 30px;
+  position: relative;
+}
+
+
+/* LOGO */
+
+.logo img {
+  width: 180px;
+  height: auto;
+}
+
+/* ICONS-LIST */
+
+.icons-list li , .list-overflow li {
+  margin: 20px 0;
+}
+
+.icons-list li:first-child{
+  border-left: 3px solid #C8FF00;
+  margin-left: -30px;
+  padding-left: 27px;
+}
+
+.icons-left-menu {
+  width: 35px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* PLAYLIST */
+
+.playlist h4 {
+  color: white;
+  margin: 25px 0 15px 0;
+}
+
+#crea-playlist {
+  font-size: 18px;
+}
+
+#plus {
+  font-size: 18px;
+  background-color: rgb(128, 128, 128);
+  color: black;
+  padding: 12px 13px;
+  margin: 0 10px 5px 0;
+}
+
+#plus:hover {
+  background-color: white;
+}
+
+/* USER SECTION */
+
+.user-section {
+  position: absolute;
+  bottom: 10px;
+}
+
+#user-img {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+#download {
+  font-size: 8px;
+  border-radius: 50%;
+  border: 1px solid rgb(128, 128, 128);
+  margin-right: 10px;
+  padding: 3px;
+  vertical-align: bottom;
+}
+
+.donwload-section {
+  border-bottom: 1px solid rgb(128, 128, 128);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* SEZIONE RIGHT */
+.right-menu {
+  background-color: #141922;
+  height: 100vh;
+  width: calc(100% - 300px);
+}
+
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  width:100%;
+  height: 100px;
+  background-color: red;
+  z-index: 50;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main {
+  margin-top: 100px;
+}
