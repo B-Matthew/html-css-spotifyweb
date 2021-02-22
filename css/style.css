@@ -7,8 +7,9 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: rgb(128, 128, 128);
+
 }
 
 
@@ -19,31 +20,33 @@ ul li {
 a {
   color: rgb(128, 128, 128);
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
   color: white;
 }
 
-.contenitore {
+.contenitore-generale {
   display: flex;
 }
 
-
-
+.contenitore-right-menu {
+  width: 95%;
+  margin: auto;
+}
 
 /* SEZIONE LEFT-MENU  */
-
-
 
 .left-menu {
   background-color: black;
   height: 100vh;
   width: 300px;
   padding: 30px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 
 /* LOGO */
 
@@ -57,11 +60,6 @@ a:hover {
 .icons-list li , .list-overflow li {
   margin: 20px 0;
 }
-
-/* .list-overflow {
-  min-height: 300px;
-  overflow: scroll;
-} */
 
 .icons-list li:first-child{
   border-left: 3px solid #C8FF00;
@@ -101,13 +99,6 @@ a:hover {
 
 /* USER SECTION */
 
-.user-section {
-  position: absolute;
-  bottom: 0;
-  background-color: black;
-  width: 70%;
-}
-
 #user-img {
   width: 30px;
   height: auto;
@@ -135,28 +126,111 @@ a:hover {
   padding-bottom: 10px;
 }
 
+.name-section a {
+  color: white;
+  font-weight: bold;
+}
 
 /* SEZIONE RIGHT */
 .right-menu {
   background-color: #141922;
   height: 100vh;
   width: calc(100% - 300px);
+  padding-top: 100px;
+  overflow: scroll;
 }
-
-
-
-
-header {
+/* SEZIONE top-fixed */
+.top-fixed {
   position: fixed;
   top: 0;
-  width:100%;
+  width: calc(100% - 300px);
   height: 100px;
-  background-color: red;
-  z-index: 50;
+  background-color: black;
+  opacity: 0.5;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
-main {
-  margin-top: 100px;
+#upgrade-btn {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin-right: 30px;
+  transition: 0.5s;
+}
+
+#upgrade-btn:hover {
+  transform: scale(1.1);
+}
+
+/* SEZIONE nav-bar */
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin: 20px 20px;
+}
+
+/* SEZIONE RECENLTY-PLAYED */
+
+.recently-played-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.recently-played-list li {
+  text-align: center;
+  width: calc( 100% / 6 )
+}
+
+.recently-played-list img {
+  max-height: 200px;
+  width: auto;
+}
+/* REGOLE FONT MAIN PAGE */
+.right-menu h2 , .right-menu h3 {
+  color: white;
+}
+
+.right-menu h2 {
+  margin: 40px 0 20px 0;
+}
+
+.right-menu h3 {
+  margin: 12px 0;
+}
+
+.right-menu p {
+  margin-bottom: 30px;
+}
+
+/* SEZIONE CREATO PER MATS */
+
+.created-for-list , .artists {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.created-for-list img {
+  margin-right: 20px;
+  max-height: 200px;
+  width: auto;
+}
+
+/* SEZIONE ARTISTI */
+
+.artists img {
+  max-height: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
 }
