@@ -10,8 +10,9 @@
     <title>Spotify</title>
   </head>
   <body>
-    <div class="contenitore-generale">
+    <div class="flex-generale">
       <div class="left-menu">
+        <!-- nav per raggruppare le 2 sezioni per flex between -->
         <nav>
           <div class="logo">
           <a href="#"><img src="img/logo.svg" alt=""></a>
@@ -27,13 +28,13 @@
             <h4>PLAYLIST</h4>
             <a id="crea-playlist" href="#"><i id="plus" class="fas fa-plus"></i>Crea Playlist</a>
             <ul class="list-overflow">
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Preferita</a></li>
+              <li><a href="#">Canzoni da festa</a></li>
+              <li><a href="#">Macchina</a></li>
+              <li><a href="#">Relax</a></li>
+              <li><a href="#">Musiche da Film</a></li>
+              <li><a href="#">Viaggio</a></li>
+              <li><a href="#">Top italiane</a></li>
             </ul>
           </div>
         </nav>
@@ -56,91 +57,96 @@
 
         <div class="contenitore-right-menu">
           <!-- SEZIONE MAIN PAGE -->
-          <section class="nav-bar">
+          <nav class="nav-bar">
             <ul>
-              <li><a href="#">IN EVIDENZA</a></li>
+              <li>
+                <a href="#">IN EVIDENZA</a>
+                <div class="evidenziatore">
+                </div>
+              </li>
               <li><a href="#">PODCAST</a></li>
               <li><a href="#">CLASSIFICHE</a></li>
               <li><a href="#">GENERI E MOOD</a></li>
               <li><a href="#">NUOVE USCITE</a></li>
               <li><a href="#">SCOPRI</a></li>
             </ul>
-          </section>
+          </nav>
+
           <!-- SEZIONE RECENTLY PLAYED -->
           <section>
             <h2>Recently played</h2>
             <ul class="recently-played-list">
               <li>
                 <div class="img-overlay">
-                  <img src="img/metal_lifting.jpg" alt="">
+                  <img src="img/muse.jpg" alt="">
                   <div class="overlay">
                   </div>
                   <div class="icon-play">
                     <a href="#"><i class="far fa-play-circle"></i></a>
                   </div>
                 </div>
-                <h3>Heavy metal</h3>
-                <a>Subtitle</a>
+                <h3>Muse</h3>
+                <a>The 2nd Law</a>
               </li>
               <li>
                 <div class="img-overlay">
-                  <img src="img/stranger.jpeg" alt="">
+                  <img src="img/ministri.jpg" alt="">
                   <div class="overlay">
                   </div>
                   <div class="icon-play">
                     <a href="#"><i class="far fa-play-circle"></i></a>
                   </div>
                 </div>
-                <h3>Stranger Things, Vol. 1(a Netflix Original Series Soundtrack) </h3>
-                <a>Kyle Dixon & Michael Stein</a>
+                <h3>Ministri</h3>
+                <a>Tempi bui</a>
               </li>
               <li>
                 <div class="img-overlay">
-                <img src="img/aquietplace.jpeg" alt="">
+                <img src="img/teatro.jpg" alt="">
                 <div class="overlay">
                 </div>
                 <div class="icon-play">
                   <a href="#"><i class="far fa-play-circle"></i></a>
                 </div>
                 </div>
-                <h3>A queit place</h3>
-                <a>Subtitle</a>
+                <h3>Il Teatro degli Orrori</h3>
+                <a>Dell'impero delle tenebre</a>
               </li>
               <li>
                 <div class="img-overlay">
-                <img src="img/split.jpeg" alt="">
+                <img src="img/queen.jpg" alt="">
                 <div class="overlay">
                 </div>
                 <div class="icon-play">
                   <a href="#"><i class="far fa-play-circle"></i></a>
                 </div>
                 </div>
-                <h3>Split</h3>
-                <a>Subtitle</a>
+                <h3>Queen</h3>
+                <a>Greatest Hits</a>
               </li>
               <li>
                 <div class="img-overlay">
-                <img src="img/cure.jpeg" alt="">
+                <img src="img/soad.jpg" alt="">
                 <div class="overlay">
                 </div>
                 <div class="icon-play">
                   <a href="#"><i class="far fa-play-circle"></i></a>
                 </div>
                 </div>
-                <h3>A cure for wellness</h3>
-                <a>Subtitle</a>
+                <h3>System of a Down</h3>
+                <a>Toxicity</a>
               </li>
               <li>
                 <div class="img-overlay">
-                <img src="img/sinister.jpeg" alt="">
+                <img src="img/ffighters.png" alt="">
                 <div class="overlay">
                 </div>
                 <div class="icon-play">
                   <a href="#"><i class="far fa-play-circle"></i></a>
                 </div>
                 </div>
-                <h3>Sinister</h3>
-                <a>Subtitle</a>
+                <h3>Foo Fighters</h3>
+                <a>One by one</a>
               </li>
             </ul>
           </section>
@@ -180,14 +186,14 @@
             <ul class="artists">
               <li>
                 <div class="img-overlay">
-                  <img src="img/youg.jpeg" alt="">
+                  <img src="img/ennio.jpg" alt="">
                   <div class="overlay-circle">
                   </div>
                   <div class="icon-play">
                     <a href="#"><i class="far fa-play-circle"></i></a>
                   </div>
                 </div>
-                <h3>Release radar</h3>
+                <h3>Ennio Morricone</h3>
               </li>
               <li>
                 <div class="img-overlay">
@@ -198,7 +204,7 @@
                     <a href="#"><i class="far fa-play-circle"></i></a>
                   </div>
                 </div>
-                <h3>Daily Mix 1</h3>
+                <h3>Ludovico Einaudi</h3>
               </li>
             </ul>
           </section>
@@ -206,13 +212,13 @@
       </div>
     </div>
 
+    <!-- SEZIONE FOOTER -->
     <footer>
-
       <section class="left-play">
-        <img id="img-play" src="img/sinister.jpeg" alt="">
+        <img id="img-play" src="img/muse.jpg" alt="">
         <div class="titolo-played">
-          <h4>Sinister</h4>
-          <p>subtitiles</p>
+          <h4>Muse</h4>
+          <p><a href="#">Follow me</a></p>
         </div>
         <div class="preferences-i">
           <a href="#"><i class="far fa-heart"></i></a>
@@ -253,8 +259,6 @@
           </div>
         </div>
       </section>
-
     </footer>
-
   </body>
-  </html>
+</html>
