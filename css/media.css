@@ -41,9 +41,10 @@
 
   .vol-i a {
     padding: 0 5px;
+  }
 }
 
-@media all and (min-width:552px) and (max-width:638px) {
+@media all and (min-width: 552px) and (max-width: 638px) {
   /* MEDIA IMMAGINI */
   .recently-played-list li , .created-for-list li , .artists li {
     margin: 20px 20px 0 0;
@@ -57,7 +58,7 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  
+
   /* MEDIA FOOTER */
   .flex-i a {
     font-size: 18px;
@@ -73,8 +74,7 @@
   }
 }
 
-
-@media all and (max-width:551px) {
+@media all and (max-width: 551px) {
   /* MEDIA IMMAGINI */
   .recently-played-list li , .created-for-list li , .artists li {
     margin: 20px 20px 0 0;
