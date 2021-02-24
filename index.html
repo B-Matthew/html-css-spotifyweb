@@ -11,33 +11,44 @@
   </head>
   <body>
     <div class="flex-generale">
+      <!-- SEZIONE NAV-BAR COMPRESSA -->
+      <div class="left-menu-2">
+        <ul>
+          <li><a href="#"><img src="img/logo-small.svg" alt=""></a></li>
+          <li><a href="#"><img class="icons-left-menu" src="img/home.svg" alt=""></a></li>
+          <li><a href="#"><img class="icons-left-menu" src="img/search.svg" alt=""></a></li>
+          <li><a href="#"><img class="icons-left-menu" src="img/libreria.svg" alt=""></a></li>
+        </ul>
+        <ul>
+          <li><a href="#"><i id="download" class="fas fa-arrow-down"></i></a></li>
+          <li><a href="#"><img id="user-img" src="img/user.jpg" alt=""></a></li>
+        </ul>
+      </div>
       <div class="left-menu">
-        <!-- nav per raggruppare le 2 sezioni per flex between -->
-        <nav>
-          <div class="logo">
+        <div class="logo">
           <a href="#"><img src="img/logo.svg" alt=""></a>
-          </div>
-          <!-- ICON LIST -->
-          <ul class="icons-list">
-            <li><a href="#"><img class="icons-left-menu" src="img/home.svg" alt="">Home</a></li>
-            <li><a href="#"><img class="icons-left-menu" src="img/search.svg" alt="">Cerca</a></li>
-            <li><a href="#"><img class="icons-left-menu" src="img/libreria.svg" alt="">La Tua Libreria</a></li>
+        </div>
+        <!-- ICON LIST -->
+        <ul class="icons-list">
+          <li><a href="#"><img class="icons-left-menu" src="img/home.svg" alt="">Home</a></li>
+          <li><a href="#"><img class="icons-left-menu" src="img/search.svg" alt="">Cerca</a></li>
+          <li><a href="#"><img class="icons-left-menu" src="img/libreria.svg" alt="">La Tua Libreria</a></li>
+        </ul>
+        <!-- PLAYLIST -->
+        <div class="playlist">
+          <h4>PLAYLIST</h4>
+          <a id="crea-playlist" href="#"><i id="plus" class="fas fa-plus"></i>Crea Playlist</a>
+          <ul class="list-overflow">
+            <li><a href="#">Preferita</a></li>
+            <li><a href="#">Canzoni da festa</a></li>
+            <li><a href="#">Macchina</a></li>
+            <li><a href="#">Relax</a></li>
+            <li><a href="#">Musiche da Film</a></li>
+            <li><a href="#">Viaggio</a></li>
+            <li><a href="#">Top italiane</a></li>
           </ul>
-          <!-- PLAYLIST -->
-          <div class="playlist">
-            <h4>PLAYLIST</h4>
-            <a id="crea-playlist" href="#"><i id="plus" class="fas fa-plus"></i>Crea Playlist</a>
-            <ul class="list-overflow">
-              <li><a href="#">Preferita</a></li>
-              <li><a href="#">Canzoni da festa</a></li>
-              <li><a href="#">Macchina</a></li>
-              <li><a href="#">Relax</a></li>
-              <li><a href="#">Musiche da Film</a></li>
-              <li><a href="#">Viaggio</a></li>
-              <li><a href="#">Top italiane</a></li>
-            </ul>
-          </div>
-        </nav>
+        </div>
+
         <!-- USER SECTION -->
         <div class="user-section">
           <div class="donwload-section">
@@ -58,7 +69,7 @@
         <div class="contenitore-right-menu">
           <!-- SEZIONE MAIN PAGE -->
           <nav class="nav-bar">
-            <ul>
+            <ul class="flex-media-navbar">
               <li>
                 <a href="#">IN EVIDENZA</a>
                 <div class="evidenziatore">
@@ -102,54 +113,55 @@
               </li>
               <li>
                 <div class="img-overlay">
-                <img src="img/teatro.jpg" alt="">
-                <div class="overlay">
-                </div>
-                <div class="icon-play">
-                  <a href="#"><i class="far fa-play-circle"></i></a>
-                </div>
+                  <img src="img/teatro.jpg" alt="">
+                  <div class="overlay">
+                  </div>
+                  <div class="icon-play">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                  </div>
                 </div>
                 <h3>Il Teatro degli Orrori</h3>
                 <a>Dell'impero delle tenebre</a>
               </li>
               <li>
                 <div class="img-overlay">
-                <img src="img/queen.jpg" alt="">
-                <div class="overlay">
-                </div>
-                <div class="icon-play">
-                  <a href="#"><i class="far fa-play-circle"></i></a>
-                </div>
+                  <img src="img/queen.jpg" alt="">
+                  <div class="overlay">
+                  </div>
+                  <div class="icon-play">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                  </div>
                 </div>
                 <h3>Queen</h3>
                 <a>Greatest Hits</a>
               </li>
               <li>
                 <div class="img-overlay">
-                <img src="img/soad.jpg" alt="">
-                <div class="overlay">
-                </div>
-                <div class="icon-play">
-                  <a href="#"><i class="far fa-play-circle"></i></a>
-                </div>
+                  <img src="img/soad.jpg" alt="">
+                  <div class="overlay">
+                  </div>
+                  <div class="icon-play">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                  </div>
                 </div>
                 <h3>System of a Down</h3>
                 <a>Toxicity</a>
               </li>
               <li>
                 <div class="img-overlay">
-                <img src="img/ffighters.png" alt="">
-                <div class="overlay">
-                </div>
-                <div class="icon-play">
-                  <a href="#"><i class="far fa-play-circle"></i></a>
-                </div>
+                  <img src="img/ffighters.png" alt="">
+                  <div class="overlay">
+                  </div>
+                  <div class="icon-play">
+                    <a href="#"><i class="far fa-play-circle"></i></a>
+                  </div>
                 </div>
                 <h3>Foo Fighters</h3>
                 <a>One by one</a>
               </li>
             </ul>
           </section>
+
           <!-- SEZIONE CREATO PER MATS -->
           <section>
             <h2>Creato per Mats</h2>
@@ -228,7 +240,7 @@
 
       <section class="center-play">
         <div class="flex-i">
-        <a href="#"><i class="fas fa-random"></i></a>
+          <a href="#"><i class="fas fa-random"></i></a>
           <a href="#"><i class="fas fa-step-backward"></i></a>
           <a href="#"><i class="far fa-play-circle"></i></a>
           <a href="#"><i class="fas fa-step-forward"></i></a>
@@ -261,4 +273,4 @@
       </section>
     </footer>
   </body>
-</html>
+  </html>
