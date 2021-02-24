@@ -35,7 +35,7 @@ a:hover {
 .left-menu {
   background-color: black;
   height: calc(100vh - 100px);
-  width: 300px;
+  width: 250px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -94,9 +94,9 @@ a:hover {
 }
 
 .list-overflow {
-
-overflow: auto;
+  overflow: auto;
 }
+
 
 .playlist h4 {
   color: white;
@@ -154,6 +154,7 @@ overflow: auto;
 .right-menu {
   height: calc(100vh - 100px);
   background-color: #141922;
+  width: calc(100% - 250px) ;
 }
 
 .contenitore-right-menu {
@@ -161,6 +162,7 @@ overflow: auto;
   padding: 0 30px;
   height: calc(100% - 100px);
   background-color: #141922;
+  width: 100%;
 }
 
 /* SEZIONE top-fixed */
