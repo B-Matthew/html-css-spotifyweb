@@ -32,7 +32,7 @@ a:hover {
 
 /* SEZIONE LEFT-MENU  */
 
-.left-menu {
+.sidebar-principale {
   background-color: black;
   height: calc(100vh - 100px);
   width: 250px;
@@ -42,7 +42,7 @@ a:hover {
   overflow: hidden;
 }
 
-.left-menu-2 {
+.sidebar-compressa {
   background-color: black;
   height: calc(100vh - 100px);
   width: 60px;
@@ -52,7 +52,7 @@ a:hover {
   display: none;
 }
 
-.left-menu-2 li {
+.sidebar-compressa li {
   width: 95%;
   margin: 20px auto;
 }
@@ -66,17 +66,17 @@ a:hover {
 
 /* ICONS-LIST */
 
-.icons-list li , .list-overflow li {
+.lista-icone li , .list-overflow li {
   margin: 20px 0;
 }
 
-.icons-list li:first-child{
+.lista-icone li:first-child{
   border-left: 3px solid #C8FF00;
   margin-left: -30px;
   padding-left: 27px;
 }
 
-.icons-left-menu {
+.icone-sidebar {
   width: 35px;
   height: auto;
   vertical-align: middle;
