@@ -1,0 +1,55 @@
+/* LINEA VERDE NAVBAR MAIN */
+
+.flex-media-navbar li:hover .evidenziatore {
+  animation: evidenziatore 2s linear infinite;
+  display: block;
+}
+
+@keyframes evidenziatore {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left:100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.evidenziatore {
+  display: none;
+}
+
+.flex-media-navbar li:first-child .evidenziatore {
+  display: block;
+}
+/* SPOTIFY LOGO */
+.logo img:hover , .sidebar-compressa ul li:first-child:hover {
+  transition: 0.5s;
+  filter: grayscale(100%)
+          brightness(40%)
+          sepia(100%)
+          hue-rotate(50deg)
+          saturate(1000%)
+          contrast(0.8);
+  transform: scale(1.2);
+}
+
+/* img rotate */
+
+.artists .img-overlay:hover img {
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

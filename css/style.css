@@ -203,7 +203,7 @@ a:hover {
   margin: 20px 20px;
 }
 
-.nav-bar ul li:first-child {
+.nav-bar .flex-media-navbar li {
   position: relative;
 }
 
@@ -321,7 +321,7 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 999;
+  z-index: 960;
 }
 
 
